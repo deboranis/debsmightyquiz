@@ -1,0 +1,44 @@
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Roboto Mono', monospace; */
+
+.intro {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #788585;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+#quiz {
+    padding: 40px;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #9CAEA9;
+    color: white;
+    display: none;
+}
+
+#start {
+    border: 5px solid #9CAEA9;
+    background-color: white;
+    color: #9CAEA9;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 20px 40px;
+}
+
+#start:hover {
+    color: white;
+    transition: ease 0.7s;
+    background-color: #9CAEA9;
+}
+
+
+@media screen and (min-width: 768px) {
+    .intro, .quiz {
+        padding: 100px;
+    }
+}
