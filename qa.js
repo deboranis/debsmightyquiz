@@ -1,13 +1,13 @@
 const questionsArray = [
     {
-        "question": "What does HTML means?",
+        "question": "What does HTML mean?",
         "answers": [
             "Hot TaMaLe",
             "High Transition Markup Lines",
             "HyperText Markup Language",
             "HyperTransfer Metabyte Loader"
         ],
-        "validAnswer": 2
+        "correctAnswer": 3
     },
     {
         "question": "Which one of these tags does not exist?",
@@ -17,7 +17,7 @@ const questionsArray = [
             "<center>",
             "<span>"
         ],
-        "validAnswer": 3
+        "correctAnswer": 3
     },
     {
         "question": "Which one is not an align-items valid value?",
@@ -27,7 +27,7 @@ const questionsArray = [
             "flex-start",
             "flex-middle"
         ],
-        "validAnswer": 4
+        "correctAnswer": 4
     },
     {
         "question": "Let's talk Javascript. What causes variable shadowing?",
@@ -37,7 +37,7 @@ const questionsArray = [
             "Declaring a let variable in a function scope",
             "Declaring a const variable in a global scope"
         ],
-        "validAnswer": 1
+        "correctAnswer": 1
     },
     {
         "question": "Which styles of writing are considered best practices for CSS, Js functions and Js classes, respectively?",
@@ -47,7 +47,7 @@ const questionsArray = [
             "Snake case, Camel Case and Pascal case",
             "Kebab case, Camel Case and Pascal case"
         ],
-        "validAnswer": 3
+        "correctAnswer": 3
     },
     {
         "question": "What do you call map, filter and reduce?",
@@ -57,7 +57,7 @@ const questionsArray = [
             "Array functions",
             "Function arrays"
         ],
-        "validAnswer": 2
+        "correctAnswer": 2
     },
     {
         "question": "Which one does not have a syntax error?",
@@ -70,36 +70,36 @@ const questionsArray = [
                 lastName = 'Doe'
             }`
         ],
-        "validAnswer": 1
+        "correctAnswer": 1
     },
     {
-        "question": "What does HTML means?",
+        "question": "Which of these array methods return a new array?",
         "answers": [
-            "Hot TaMaLe",
-            "High Transition Markup Lines",
-            "HyperText Markup Language",
-            "HyperTransfer Metabyte Loader"
+            "map and filter",
+            "every and includes",
+            "every and reduce",
+            "only reduce"
         ],
-        "validAnswer": 2
+        "correctAnswer": 1
     },
     {
-        "question": "What defines  ",
+        "question": "Which one of these is a possible parameter in a reduce() callback?",
         "answers": [
-            "Hot TaMaLe",
-            "High Transition Markup Lines",
-            "HyperText Markup Language",
-            "HyperTransfer Metabyte Loader"
+            "number",
+            "sort",
+            "currentArray",
+            "index"
         ],
-        "validAnswer": 2
+        "correctAnswer": 4
     },
     {
         "question": "What makes Javascript an asynchronous language?",
         "answers": [
-            "It's async/await functions",
+            "Its async/await functions",
             "The fact that we can use promises",
             "The fact that it can execute commands in an orderly fashion",
             "Javascript is not an asynchronous language"
         ],
-        "validAnswer": 4
+        "correctAnswer": 4
     },
 ]

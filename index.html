@@ -12,7 +12,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="intro">
+    <div id="intro">
       <h1>Debs's Mighty Front-End Quiz</h1>
       <p id="intro_text">
         Hello, fellow Ironhacker! We have successfully completed our first
@@ -21,14 +21,18 @@
     </div>
     <div id="quiz">
       <h3 id="question"></h3>
+      <h4 id="score_text"></h4>
       <ul id="answers">
-        <li id="answer_a"></li>
-        <li id="answer_b"></li>
-        <li id="answer_c"></li>
-        <li id="answer_d"></li>
+        <button onclick="registerAnswer(1)" id="answer_a"></button>
+        <button onclick="registerAnswer(2)" id="answer_b"></button>
+        <button onclick="registerAnswer(3)" id="answer_c"></button>
+        <button onclick="registerAnswer(4)" id="answer_d"></button>
       </ul>
     </div>
-    <div class="btn_container">
+    <div id="score">
+      <h3 id="score_value">Score: 0</h3>
+    </div>
+    <div id="btn_container">
       <button id="start">Start!</button>
     </div>
     <script src="qa.js"></script>
