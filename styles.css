@@ -9,6 +9,11 @@
     text-align: center;
 }
 
+#gif {
+    display: none;
+    max-height: 115px;
+}
+
 #quiz {
     padding: 20px;
     align-items: center;

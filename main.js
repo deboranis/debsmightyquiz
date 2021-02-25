@@ -1,5 +1,4 @@
-// import questionsArray from './qa';
-
+const gif = document.getElementById('gif'); 
 const intro = document.getElementById('intro');
 const introText = document.getElementById('intro_text');;
 const button = document.getElementById('start');
@@ -51,15 +50,19 @@ nextQuestion = () => {
 showScore = () => {
     answers.style.display = "none";
     scoreText.style.display = "flex";
+    gif.style.display = "block";
     if (score < 4) {
         questionTitle.innerText = "Off to a good start!";
         scoreText.innerText = "You got some work to do, but remember: fail fast! Keep studying and don't give up!";
+        gif.setAttribute('src', './gifs/notbad.gif');
     } else if (score < 7) {
         questionTitle.innerText = "Keep trying!";
         scoreText.innerText = "You're already doing good! Keep it up and you'll beat the quiz in no time :)";
-    } else if (score >= 8) {
+        gif.setAttribute('src', './gifs/keepgoing.gif');
+    } else {
         questionTitle.innerText = "Amazing!";
         scoreText.innerText = "You nailed it! Congratulations!";
+        gif.setAttribute('src', './gifs/great.gif');
     }
 }
 

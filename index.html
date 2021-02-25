@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>Document</title>
+    <title>Debs's Mighty Quiz</title>
   </head>
   <body>
     <div id="intro">
@@ -23,17 +23,21 @@
       <h3 id="question"></h3>
       <h4 id="score_text"></h4>
       <ul id="answers">
-        <button onclick="registerAnswer(1)" id="answer_a"></button>
-        <button onclick="registerAnswer(2)" id="answer_b"></button>
-        <button onclick="registerAnswer(3)" id="answer_c"></button>
-        <button onclick="registerAnswer(4)" id="answer_d"></button>
+        <audio id="answer_sound" src="./audios/mixkit-video-game-lock-2851.wav"></audio>
+        <button onclick="registerAnswer(1); document.getElementById('answer_sound').play()"  id="answer_a"></button>
+        <button onclick="registerAnswer(2); document.getElementById('answer_sound').play()" id="answer_b"></button>
+        <button onclick="registerAnswer(3); document.getElementById('answer_sound').play()" id="answer_c"></button>
+        <button onclick="registerAnswer(4); document.getElementById('answer_sound').play()" id="answer_d"></button>
       </ul>
+      <audio src="./audios/mixkit-retro-game-notification-212.wav" id="score_sound"></audio>
+      <img id="gif" onload="document.getElementById('score_sound').play()"/>
     </div>
     <div id="score">
       <h3 id="score_value">Score: 0</h3>
     </div>
     <div id="btn_container">
-      <button id="start">Start!</button>
+      <audio id="start_sound" src="./audios/mixkit-arcade-bonus-alert-767.wav"></audio>
+      <button onclick="document.getElementById('start_sound').play()" id="start">Start!</button>
     </div>
     <script src="qa.js"></script>
     <script src="main.js"></script>
