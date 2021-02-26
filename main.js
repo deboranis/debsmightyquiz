@@ -24,7 +24,7 @@ loadQuestions = () => {
     quiz.style.display = "flex";
     scoreDiv.style.display = "flex";
     btncontainer.style.display = "none";
-    intro.style.padding = '20px 40px';
+    intro.style.padding = '10px 40px';
 
     //calling the HTML elements of the questions
     nextQuestion();
@@ -51,6 +51,7 @@ showScore = () => {
     answers.style.display = "none";
     scoreText.style.display = "flex";
     gif.style.display = "block";
+    quiz.style.minHeight = "292px";
     if (score < 4) {
         questionTitle.innerText = "Off to a good start!";
         scoreText.innerText = "You got some work to do, but remember: fail fast! Keep studying and don't give up!";
@@ -67,21 +68,19 @@ showScore = () => {
 }
 
 registerAnswer = answerNumber => {
-    console.log(`registerAnswer called. i = ${i}`)
     //making sure it doesn't break on the first question
     if (i <= -1) return;
-    //making sure it doesn't break on the last question
-    if (i === 9) showScore();
-
     // comparing current answer and valid answer
-    console.log(`answerNumber: ${answerNumber}`)
-    console.log(`correctAnswer: ${questionsArray[i].correctAnswer}`)
     if (questionsArray[i].correctAnswer === answerNumber) {
         score += 1;
-        console.log(`Correct answer. Score is: ${score}`)
     }
     scoreValue.innerText = `Score: ${score}`
-
+    
+    //making sure it doesn't break on the last question and keeps calling nextQuestion when the whole array has been displayed
+    if (i === 9) { 
+        showScore();
+        return
+    }
     //calling the next question
     nextQuestion();
 }

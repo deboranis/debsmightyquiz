@@ -1,6 +1,31 @@
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Roboto Mono', monospace; */
 
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    font-weight: 700;
+}
+
+footer {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: #CCDAD1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 #intro {
     font-family: 'Roboto Mono', monospace;
     background-color: #788585;
@@ -11,11 +36,13 @@
 
 #gif {
     display: none;
-    max-height: 115px;
+    max-height: 130px;
+    margin-bottom: 10px;
 }
 
 #quiz {
-    padding: 20px;
+    padding: 10px 20px;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #9CAEA9;
@@ -24,8 +51,9 @@
 }
 
 #btn_container {
-    padding: 70px 40px;
+    padding: 40px 40px;
     align-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     background-color: #9CAEA9;
@@ -52,6 +80,7 @@
 #question {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    text-align: center;
 }
 
 #answers {
@@ -66,10 +95,11 @@
     text-align: left;
     color: white;
     background-color: #9CAEA9;
-    border: 2px solid white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     transition: ease 0.7s;
+    border: 2px solid white;
+    outline: none;
 }
 
 #answer_a:hover, #answer_b:hover, #answer_c:hover, #answer_d:hover {
@@ -78,7 +108,7 @@
 }
 
 #score {
-    padding: 40px;
+    padding: 10px 40px;
     justify-content: center;
     background-color: #CCDAD1;
     color: white;
@@ -88,9 +118,10 @@
 #score_text {
     display: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     align-self: center;
+    padding: 0 20px;
 }
 
 #score_value {
@@ -99,7 +130,59 @@
 }
 
 @media screen and (min-width: 768px) {
-    .intro, .quiz {
-        padding: 100px;
+    #intro {
+        padding: 120px;
+        font-size: 18px;
     }
+
+    #intro_text {
+        margin-top: 50px;
+    }
+
+    #start {
+        font-size: 2rem;
+        padding: 30px 50px;
+    }
+
+    #btn_container {
+        height: 400px;
+    }
+
+    #gif {
+        min-height: 500px;
+    }
+
+    #question {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    #score_text, #score_value, footer {
+        font-size: 20px;
+    }
+
+    #score_text {
+        padding: 0 40px;
+        line-height: 1.25;
+    }
+
+    #quiz {
+        padding-bottom: 40px;
+        height: 700px;
+    }
+
+    #answer_a, #answer_b, #answer_c, #answer_d {
+        font-size: 25px;
+        margin: 20px 50px;
+    } 
+}
+
+@media screen and (min-width: 1980px) {
+    /* #intro_title{
+        font-size: 40px;
+    }
+
+    #intro {
+        height: 600px;
+    } */
 }
