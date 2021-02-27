@@ -25,6 +25,7 @@ loadQuestions = () => {
     scoreDiv.style.display = "flex";
     btncontainer.style.display = "none";
     intro.style.padding = '10px 40px';
+    answers.style.display = "flex";
 
     //calling the HTML elements of the questions
     nextQuestion();
@@ -51,7 +52,7 @@ showScore = () => {
     answers.style.display = "none";
     scoreText.style.display = "flex";
     gif.style.display = "block";
-    quiz.style.minHeight = "292px";
+    quiz.style.minHeight = "350px";
     if (score < 4) {
         questionTitle.innerText = "Off to a good start!";
         scoreText.innerText = "You got some work to do, but remember: fail fast! Keep studying and don't give up!";

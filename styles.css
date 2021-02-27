@@ -23,7 +23,6 @@ footer {
     background-color: #CCDAD1;
     position: fixed;
     bottom: 0;
-    width: 100%;
 }
 
 #intro {
@@ -48,6 +47,8 @@ footer {
     background-color: #9CAEA9;
     color: white;
     display: none;
+    min-height: 350px;
+    max-height: 350px;
 }
 
 #btn_container {
@@ -58,6 +59,7 @@ footer {
     flex-direction: column;
     background-color: #9CAEA9;
     color: white;
+    min-height: 150px;
 }
 
 #start {
@@ -79,19 +81,21 @@ footer {
 
 #question {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 22px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 #answers {
-    display: flex;
+    display: none;
     flex-direction: column;
     padding-left: 0;
 }
 
 #answer_a, #answer_b, #answer_c, #answer_d {
-    padding: 15px;
-    margin: 10px 0;
+    padding: 10px;
+    margin: 5px 0;
     text-align: left;
     color: white;
     background-color: #9CAEA9;
@@ -122,6 +126,7 @@ footer {
     text-align: center;
     align-self: center;
     padding: 0 20px;
+    margin: 0 0 30px;
 }
 
 #score_value {
@@ -129,7 +134,9 @@ footer {
     font-weight: 600;
 }
 
-@media screen and (min-width: 768px) {
+@media screen 
+and (min-width: 768px)
+and (max-width: 800px) {
     #intro {
         padding: 120px;
         font-size: 18px;
@@ -149,12 +156,15 @@ footer {
     }
 
     #gif {
-        min-height: 500px;
+        max-height: 500px;
+        max-width: 600px;
+        min-height: 300px;
     }
 
     #question {
         font-size: 35px;
         margin-bottom: 10px;
+        max-width: 680px;
     }
 
     #score_text, #score_value, footer {
@@ -164,25 +174,23 @@ footer {
     #score_text {
         padding: 0 40px;
         line-height: 1.25;
+        margin-bottom: 50px;
+        max-width: 500px;
     }
 
-    #quiz {
-        padding-bottom: 40px;
-        height: 700px;
+    body > #quiz {
+        padding-bottom: 43px;
+        min-height: 710px !important;
+        max-height: 710px;
     }
 
     #answer_a, #answer_b, #answer_c, #answer_d {
         font-size: 25px;
         margin: 20px 50px;
+        padding: 20px;
     } 
-}
 
-@media screen and (min-width: 1980px) {
-    /* #intro_title{
-        font-size: 40px;
+    footer {
+        width: 100%;
     }
-
-    #intro {
-        height: 600px;
-    } */
 }
