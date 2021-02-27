@@ -5,7 +5,7 @@
 <h3>Welcome to my Mighty Quiz! I decided to make this project as I remembered how lost I felt when I started studying front-end... those were trying times! :weary: I felt I would never grasp many of the concepts used for this very project, you see. Glad I was wrong! But maybe I can help you workout your brain a little, how about that? :wink: </h3>
 
 
-<h3>For Debs's Mighty Quiz, I used:
+<h3>Debs's Mighty Quiz is a mobile first app designed for 360px480 and 768x1024 screens. For its development, I used:
 <ul> 
 <li>HTML</li>
 <li>CSS</li>
