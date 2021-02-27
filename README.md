@@ -11,6 +11,6 @@
 <li>CSS</li>
 <li>Vanilla Js</li>
 </ul>
-If you wanna play it, [go here](https://deboranis.github.io/debsmightyquiz/.).
+ If you wanna play it, <a href="https://deboranis.github.io/debsmightyquiz/">go here</a>.
  Hope you like it! :purple_heart:
 </h3>
